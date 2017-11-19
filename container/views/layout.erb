@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <link rel="stylesheet" href="/master_style.css">
+  </head>
+  <body>
+    <%= erb(:'partials/navigation', :layout => false) %>
+
+    <%= yield %>
+
+    <%= erb(:'partials/falsecopyright', :layout => false) %>
+  </body>
+</html>
