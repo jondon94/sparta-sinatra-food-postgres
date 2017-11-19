@@ -1,14 +1,14 @@
 <form action="/<%= @food.id %>" method="POST">
 
-  <div>
+  <div class="inputBox">
     <label>Title</label>
     <input type="text" name="title" placeholder="Enter a title" value="<%= @food.title %>">
   </div>
-  <div>
+  <div class="inputBox">
     <label>Body</label>
     <textarea name="body" rows="8" cols="80" placeholder="The body of post"><%= @food.body %></textarea>
   </div>
-  <div>
+  <div class="inputBox">
       <input type="submit" value="Save Post">
   </div>
 

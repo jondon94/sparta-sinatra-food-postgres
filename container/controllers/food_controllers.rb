@@ -9,25 +9,6 @@ class FoodController < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  # $veg = [{
-	#  id: 0,
-	#  title: "Courgette",
-	#  body: "Corgettes are easy to grow, placholder text goes here",
-  #  image: 'https://i2-prod.manchestereveningnews.co.uk/incoming/article12478695.ece/ALTERNATES/s615/Fresh-zucchini-courgette.jpg',
-  # },
-  # {
-  #   id: 1,
-  #   title: "Tomato",
-  #   body: "Tomatos are easy to grow, placholder text goes here",
-  #   image: 'https://www.rodalesorganiclife.com/sites/rodalesorganiclife.com/files/styles/listicle_slide_custom_user_phone_1x/public/airyspot_ahmad_faizal_yahya_102522.jpg?itok=Xnuv04tf',
-  # },
-  # {
-  #   id: 2,
-  #   title: "Rhubarb",
-  #   body: "Rhubarb is easy to grow, placholder text goes here",
-  #   image: 'https://www.pomonafruits.co.uk/images/Rhubarb-Thompsons-Terrifically-Tasty.jpg',
-  # }];
-
   get "/" do
     @title = 'Homepage'
     @food = Food.all
@@ -69,6 +50,7 @@ class FoodController < Sinatra::Base
     food = Food.find(id)
     food.title = params[:title]
     food.body = params[:body]
+
     food.save
     redirect '/'
   end

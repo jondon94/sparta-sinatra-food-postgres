@@ -7,12 +7,39 @@ body {
 
 .general {
   background-color: white;
-  margin: 0px 200px;
+  margin: 50px 100px;
+  box-shadow: 5px -5px 25px;
+  display: inline-block;
+  padding: 50px 50px;
 }
 
 nav {
   text-align: center;
-  background-color: forestgreen;
+  background-color: green;
   margin: 25px 25px;
-  
+  padding: 15px 0px;
+  font-family: sans-serif;
+  font-size: 18px;
+  word-spacing: 40px
+}
+
+footer {
+  color: lightgrey;
+}
+
+.pageTitle {
+  color: lightgrey;
+}
+
+.inputBox {
+  margin: 40px 40px;
+  color: lightgrey;
+}
+
+a {
+  color: lightblue;
+}
+
+a:hover {
+  color: darkblue;
 }
