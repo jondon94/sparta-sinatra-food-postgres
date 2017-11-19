@@ -1,5 +1,7 @@
-<h1><%= @food.title %></h1>
-<p><%= @food.body %></p>
+<div class="general">
+  <h1><%= @food.title %></h1>
+  <p><%= @food.body %></p>
+</div>
 <a href="/<%= @food.id %>/edit">edit</a>
 <form action="<%= @food.id %>" method="POST">
   <input type="hidden" name="_method" value="DELETE">

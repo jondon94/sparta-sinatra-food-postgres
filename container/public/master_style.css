@@ -1,4 +1,18 @@
 body {
-  color: red;
   text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/b/soil-background-38546985.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.general {
+  background-color: white;
+  margin: 0px 200px;
+}
+
+nav {
+  text-align: center;
+  background-color: forestgreen;
+  margin: 25px 25px;
+  
 }
