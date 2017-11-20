@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/b/soil-background-38546985.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.general {
+  background-color: white;
+  margin: 50px 100px;
+  box-shadow: 5px -5px 25px;
+  display: inline-block;
+  padding: 50px 50px;
+}
+
+nav {
+  text-align: center;
+  background-color: green;
+  margin: 25px 25px;
+  padding: 15px 0px;
+  font-family: sans-serif;
+  font-size: 18px;
+  word-spacing: 40px;
+  float: top;
+  position: fixed;
+  width: 1370px;
+}
+
+footer {
+  color: lightgrey;
+
+}
+
+.pageTitle {
+  padding-top: 140px;
+  color: lightgrey;
+}
+
+.inputBox {
+  margin: 40px 40px;
+  color: lightgrey;
+}
+
+a {
+  color: lightblue;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.tileImage {
+  width: 150px;
+  height: 150px;
+}
