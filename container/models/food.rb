@@ -1,13 +1,13 @@
 class Food
 
-  attr_accessor :id, :title, :body
+  attr_accessor :id, :title, :body, :image
 
   def save
     conn = Food.open_connection
     if(!self.id)
-      sql = "INSERT INTO food (title, body) VALUES ('#{self.title}', '#{self.body}')"
+      sql = "INSERT INTO food (title, body, img) VALUES ('#{self.title}', '#{self.body}', '#{self.image}')"
     else
-      sql = "UPDATE food SET title='#{self.title}', body='#{self.body}' WHERE id = #{self.id}"
+      sql = "UPDATE food SET title='#{self.title}', body='#{self.body}', image='#{self.image}', WHERE id = #{self.id}"
     end
     conn.exec(sql)
   end
@@ -24,7 +24,8 @@ class Food
 
   def self.all
     conn = self.open_connection
-    sql = "SELECT id,title,body FROM food ORDER BY id"
+    #this is where it broke
+    sql = "SELECT id,title,body,image FROM food ORDER BY id"
     results = conn.exec(sql)
     foods = results.map do |food|
       self.hydrate(food)
@@ -44,6 +45,7 @@ class Food
     food.id = food_data['id']
     food.title = food_data['title']
     food.body = food_data['body']
+    food.image = food_data['image']
     food
   end
 

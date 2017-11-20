@@ -50,7 +50,7 @@ class FoodController < Sinatra::Base
     food = Food.find(id)
     food.title = params[:title]
     food.body = params[:body]
-
+    food.image = params[:image]
     food.save
     redirect '/'
   end
