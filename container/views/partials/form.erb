@@ -9,6 +9,10 @@
     <textarea name="body" rows="8" cols="80" placeholder="The body of post"><%= @food.body %></textarea>
   </div>
   <div class="inputBox">
+    <label>Image</label>
+    <textarea name="name" rows="8" cols="80" value="<%= @food.image %>"><%= @food.image %></textarea>
+  </div>
+  <div class="inputBox">
       <input type="submit" value="Save Post">
   </div>
 

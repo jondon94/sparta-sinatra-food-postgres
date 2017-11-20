@@ -28,6 +28,7 @@ nav {
 
 footer {
   color: lightgrey;
+
 }
 
 .pageTitle {
@@ -46,4 +47,9 @@ a {
 
 a:hover {
   color: darkblue;
+}
+
+.tileImage {
+  width: 150px;
+  height: 150px;
 }

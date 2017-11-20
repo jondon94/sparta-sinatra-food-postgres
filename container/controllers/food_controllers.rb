@@ -30,6 +30,10 @@ class FoodController < Sinatra::Base
     erb :'foodpages/new'
   end
 
+  get '/zones' do
+    erb :'foodpages/zones'
+  end
+
   get '/:id' do
     id = params[:id].to_i
     @food = Food.find(id)
@@ -40,9 +44,9 @@ class FoodController < Sinatra::Base
     food = Food.new
     food.title = params[:title]
     food.body = params[:body]
+    food.image = params[:image]
     food.save
     redirect '/'
-
   end
 
   put '/:id' do

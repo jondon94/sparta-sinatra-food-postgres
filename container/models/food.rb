@@ -5,7 +5,7 @@ class Food
   def save
     conn = Food.open_connection
     if(!self.id)
-      sql = "INSERT INTO food (title, body, img) VALUES ('#{self.title}', '#{self.body}', '#{self.image}')"
+      sql = "INSERT INTO food (title, body, image) VALUES ('#{self.title}', '#{self.body}', '#{self.image}')"
     else
       sql = "UPDATE food SET title='#{self.title}', body='#{self.body}', image='#{self.image}', WHERE id = #{self.id}"
     end
