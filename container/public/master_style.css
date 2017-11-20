@@ -20,7 +20,10 @@ nav {
   padding: 15px 0px;
   font-family: sans-serif;
   font-size: 18px;
-  word-spacing: 40px
+  word-spacing: 40px;
+  float: top;
+  position: fixed;
+  width: 1370px;
 }
 
 footer {
@@ -28,6 +31,7 @@ footer {
 }
 
 .pageTitle {
+  padding-top: 100px;
   color: lightgrey;
 }
 
